@@ -1,0 +1,89 @@
+.todo-add-card {
+    background: #fff;
+    width: 24rem;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.11);
+    height: 500px;
+    color: grey;
+
+}
+
+.card-title {
+    background-color: darken($primary, 5%);
+    padding: 0.5rem;
+
+    h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+
+.form-control {
+    outline: none;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1.75rem;
+    padding: 0.25rem 0;
+    border: none;
+    border-bottom: 1px solid $grey-lighter;
+    transition: all .5s;
+    resize: none;
+
+    &:hover {
+        border-color: $grey;
+    }
+
+    &:active,
+    &:focus {
+        border-color: $primary;
+    }
+}
+
+.form-group {
+    padding: 3rem 2.5rem 5rem;
+
+}
+
+
+.btn-add {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: $primary;
+    border-radius: 4rem;
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 2px solid $primary;
+    padding: 0.9rem 0 1.1rem;
+    transition: color .5s, border-color .5s;
+
+    &:hover,
+    &:focus {
+        color: darken($primary, 10%);
+        border-color: darken($primary, 10%);
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+}
+
+input::file-selector-button {
+    font-weight: bold;
+    color: $primary;
+    padding: 0.5em;
+
+    border: none;
+    background-color: #fff;
+
+    &:hover,
+    &:focus {
+        color: darken($primary, 10%);
+        border-color: darken($primary, 10%);
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+}
